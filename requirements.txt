@@ -1,4 +1,5 @@
 Flask
-pytube==15.0.0 # Or the latest version available, check PyPI for current
+pytube
 pydub
 SpeechRecognition
+Flask-Cors
