@@ -4,8 +4,10 @@ import os
 import uuid
 import speech_recognition as sr
 from pydub import AudioSegment
+from flask_cors import CORS # Add this line
 
 app = Flask(__name__)
+CORS(app) # Add this line to enable CORS for all routes
 
 DOWNLOAD_FOLDER = "downloads"
 if not os.path.exists(DOWNLOAD_FOLDER):
